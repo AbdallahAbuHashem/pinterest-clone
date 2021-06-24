@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import photo from './assets/photo.jpeg';
+import photo1 from './assets/photo1.jpeg';
+import photo2 from './assets/photo2.jpg';
+import photo3 from './assets/photo3.jpg';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className={"content-container"}>
+        <img src={photo} width={300} className={"content"}/>
+        <img src={photo1} width={300} className={"content"}/>
+        <img src={photo2} width={300} className={"content"}/>
+        <img src={photo3} width={300} className={"content"}/>
+        <img src={photo} width={300} className={"content"}/>
+        <img src={photo1} width={300} className={"content"}/>
+        <img src={photo2} width={300} className={"content"}/>
+        <img src={photo3} width={300} className={"content"}/>
+      </div>
     </div>
   );
 }
